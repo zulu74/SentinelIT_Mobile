@@ -1,0 +1,22 @@
+<SentinelDashboard>:
+    orientation: "vertical"
+    padding: 20
+    spacing: 15
+
+    Label:
+        id: status_label
+        text: "🛡️ SentinelIT Mobile Ready"
+        font_size: "20sp"
+        halign: "center"
+        valign: "middle"
+        size_hint_y: 0.6
+        text_size: self.size
+
+    Button:
+        text: "Scan Now"
+        font_size: "18sp"
+        size_hint_y: 0.2
+        background_color: (0.2, 0.6, 0.8, 1)
+        color: (1, 1, 1, 1)
+        on_release: root.scan_now()
+
